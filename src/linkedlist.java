@@ -1,5 +1,25 @@
-import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.*;
 
+public class linkedlist {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        CreateLL list = new CreateLL();
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            int data = scanner.nextInt();
+            list.add(data);
+        }
+
+        System.out.println("Original List:");
+        list.display();
+        scanner.close();
+    }
+}
 class Node {
     int data;
     Node next;
@@ -10,10 +30,10 @@ class Node {
     }
 }
 
-class LinkedList {
+class CreateLL{
     Node head;
 
-    public LinkedList() {
+    public CreateLL() {
         this.head = null;
     }
 
@@ -38,23 +58,4 @@ class LinkedList {
         System.out.println();
     }
 }
-public class linkedlist {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        LinkedList list = new LinkedList();
 
-        System.out.print("Enter the number of elements: ");
-        int n = scanner.nextInt();
-
-        System.out.println("Enter the elements:");
-        for (int i = 0; i < n; i++) {
-            int data = scanner.nextInt();
-            list.add(data);
-        }
-
-        System.out.println("Original List:");
-        list.display();
-        scanner.close();
-    }
-}
-    
