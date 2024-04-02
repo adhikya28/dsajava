@@ -38,7 +38,7 @@ class LinkedList {
         System.out.println();
     }
 }
-public class Main {
+public class linkedlist {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         LinkedList list = new LinkedList();
